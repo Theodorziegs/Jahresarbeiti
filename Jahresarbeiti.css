@@ -1,6 +1,6 @@
    body{
        margin: 0px;
-       background-color: #ffffffde;
+       background-color: #b694ffb1;
    }
    
    .headerOben {
@@ -18,10 +18,12 @@
 
    .headerUnten {
         height: 30px;
-        background-color: rgb(40, 40, 40);
+        background-color: rgb(32, 32, 32);
         display: flex;
         justify-content: center;
         align-items: center;
+        -webkit-box-shadow: 0px 9px 41px 4px rgba(0,0,0,0.9); 
+        box-shadow: 0px 9px 41px 4px rgba(0,0,0,0.9);
    }
 
    .navHeader {
@@ -42,7 +44,11 @@
       display: grid;
       grid-template-rows: repeat(21, 1fr);
       grid-template-columns: repeat(21, 1fr);
+      -webkit-box-shadow: 0px 0px 35px 2px rgba(255,255,255,0.52); 
+      box-shadow: 0px 0px 35px 2px rgba(255,255,255,0.52);
+      border: 2px double rgba(60,179,113,0.5);
    }
+   
 
    .canvasLocation {
        background-color: transparent;
@@ -61,10 +67,10 @@
    .up {
 	    background-color:transparent;
 	    border-radius:18px;
-	    border:2px solid #b694ff;
+	    border:2px solid #ffffff;
 	    display:inline-block;
 	    cursor:pointer;
-	    color:#b694ff;
+	    color:#ffffff;
 	    font-family:Arial;
 	    font-size:20px;
 	    padding:15px 40px;
@@ -83,10 +89,10 @@
     .left {
         background-color:transparent;
         border-radius:18px;
-        border:2px solid #b694ff;
+        border:2px solid #ffffff;
         display:inline-block;
         cursor:pointer;
-        color:#b694ff;
+        color:#ffffff;
         font-family:Arial;
         font-size:20px;
         padding:15px 40px;
@@ -100,10 +106,10 @@
     .mid {
         background-color:transparent;
         border-radius:18px;
-        border:2px solid #b694ff;
+        border:2px solid #ffffff;
         display:inline-block;
         cursor:pointer;
-        color:#b694ff;
+        color:#ffffff;
         font-family:Arial;
         font-size:20px;
         padding:15px 16px;
@@ -117,10 +123,10 @@
     .right {
         background-color:transparent;
         border-radius:18px;
-        border:2px solid #b694ff;
+        border:2px solid #ffffff;
         display:inline-block;
         cursor:pointer;
-        color:#b694ff;
+        color:#ffffff;
         font-family:Arial;
         font-size:20px;
         padding:15px 40px;
@@ -141,10 +147,10 @@
     .down {
         background-color:transparent;
         border-radius:18px;
-        border:2px solid #b694ff;
+        border:2px solid #ffffff;
         display:inline-block;
         cursor:pointer;
-        color:#b694ff;
+        color:#ffffff;
         font-family:Arial;
         font-size:20px;
         padding:15px 40px;
