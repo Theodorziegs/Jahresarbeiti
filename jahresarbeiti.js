@@ -15,7 +15,7 @@ addEventListener("resize", function(){
         x: 1,
         y: 1
     };    
-           
+
     let obstacle = { //die Hindernisse 
         x: 4,
         y: 4
