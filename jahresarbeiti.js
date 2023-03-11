@@ -40,7 +40,7 @@ draw();
 function draw(){ //zeichnet
     
 
-    ctx.fillStyle = '#F8F8FF';
+    ctx.fillStyle = '000000';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = '#b694ff';
     
