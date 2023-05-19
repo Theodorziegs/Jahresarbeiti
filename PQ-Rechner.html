@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Jahresarbeiti.css">
+    <link rel="stylesheet" href="notenrechner.css">
+    <link rel="stylesheet" href="PQ-Rechner.css">
+    <title>PQ-Formel Rechner</title>
+    <script>
+        function calculate(){
+            let a = parseFloat(document.getElementById("a").value);
+            let p = parseFloat(document.getElementById("p").value);
+            let q = parseFloat(document.getElementById("q").value);
+
+            let P = p / a;
+            let Q = q / a;
+
+            let vorWzl = P / 2;
+            let sqP = vorWzl * vorWzl;
+            let wurzel = sqP - Q;
+
+            if (wurzel < 0){
+                alert("Fehler, da aus einer negativen Zahl die Wurzel gezogen wird.");
+            }
+
+            ergebnis1 = vorWzl + Math.sqrt(wurzel);
+            ergebnis2 = vorWzl - Math.sqrt(wurzel);
+
+      document.getElementById("ergebnis1").innerHTML = "X1 = " + ergebnis1;
+      document.getElementById("ergebnis2").innerHTML = "X2 = " + ergebnis2;
+        }
+    </script>
+</head>
+<body>
+    <header class="headerOben">
+        <a href="Jahresarbeiti.html"><img class="logo" src="Roulette.png"></a>
+        </header>
+        <header class="headerUnten">
+            <a class="navHeader" href="Jahresarbeiti.html">Jahresarbeit</a>
+            <a class="navHeader" href="notenrechner.html">Notenrechner</a>
+            <a class="navHeader" href="PQ-Rechner.html">PQ-Formel Rechner</a>
+        </header>
+
+<div class="PQRechner">
+    <h1>PQ-Formel Rechner:</h1>
+        
+  <input type="number" id="a">
+  <label for="a">X&#178</label>
+
+  <input type="number" id="p">
+  <label for="p">X</label>
+
+  <input type="number" id="q">
+  <label for="q"></label>
+
+  <button onclick="calculate()">&#10003</button>
+
+  <a href="PQ-Rechner.html"><button>&#9860</button></a><br>
+
+  <div id="ergebnis1" class="result"></div>
+  <div id="ergebnis2" class="result"></div>
+
+</div>
+</body>
+</html>
